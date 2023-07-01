@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+#banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url('https://thumbs.dreamstime.com/b/car-wash-banner-concept-modern-vehicle-water-drops-background-right-side-copy-space-153881333.jpg?w=1400');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.banner-text{
+    text-align: center;
+    color: rgb(199, 192, 192);
+    padding-top: 180px;
+}
+
+.banner-text h1{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200%;
+    text-transform: uppercase;
+    
+    
+}
+
+.banner-text p{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400%;
+    
+}
+
+.banner-btn{
+    margin: 30px auto 0;
+}
+
+.banner-btn a{
+    display: inline-block;
+    width: 120px;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: whitesmoke;
+    border: 2px solid white;
+    text-decoration: none;
+   z-index: 1;
+   color: whitesmoke;
+}
+
+.banner-btn a:hover{
+    background-color: gray;
+    width: 10%;
+z-index: -1;
+    transition: 0.2s;
+}
+#sideNav{
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0px;
+    z-index: 2;
+    background-color: rgb(114, 114, 206);
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+ 
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+   
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img{
+    width: 30px;
+   margin-top: 5px;
+}
+
+@media screen and (max-width:770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    
+}
+
+/*** feature**/
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+   
+  }
+.title-text h2{
+    font-size: 40px;
+    padding: 10px auto;
+    color: rgb(66, 65, 65);
+    text-transform: uppercase;
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.feature{
+    flex-basis: 40%;
+}
+.feature-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.feature-img img{
+    width: 70%;
+    border-radius: 10px;
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+.feature h2{
+    text-align: center;
+    margin-bottom: 5px;
+    
+    font-weight: solid;
+    color: rgb(56, 54, 54);
+    text-transform: capitalize;
+}
+
+.feature h2:after{
+    display: block;
+    height: 1px;
+    background-color: grey;
+    content: "";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+   
+   
+  }
+.feature-desc{
+display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: rgb(66, 53, 53);
+   
+}
+
+.feature-text p{
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: initial;
+    text-transform: capitalize;
+}
+@media screen and (max-width:770px){
+    .title-text h2{
+        font-size: 35px;
+    }
+    .feature{
+       flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+        
+    }
+}
+
+.feature-img img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/** services**/
+
+
+
+.service-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.service-showcase li{
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.service-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(49, 28, 28);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.service-photo img{
+    width: 99%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+.service-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+.clearfix {zoom:1}
+.clearfix::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#service{
+    padding: 70px 0;
+    width: 100%;
+    background-color: rgb(214, 205, 205);
+    
+    
+
+}
+
+@media screen and (max-width:770px){
+    .title-text h2{
+        font-size: 35px;
+    }
+    .service-showcase{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+   .service-photo{
+    flex-basis: 100%;
+    
+   }
+   .service-photo img{
+    width: 100%;
+    
+   }
+}
+
+/***testimonial**/
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 30px #359b9114;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial-col p{
+    font-size: 15px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.icon{
+    margin-left: 10px;
+    color: rgb(170, 36, 103);
+    font-size: 20px;
+
+}
+.user-info small{
+    color: darkblue;
+}
+
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+@media screen and (max-width:770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+/* footer*/
+
+#footer{
+    padding: 100px 0 20px;
+    background: rgb(226, 226, 226);
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h2{
+    margin: 10px 0;
+    text-transform: capitalize;
+    
+}
+.footer-row p{
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.footer-left .footer-icon,.footer-right .footer-icon{
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+}
+.social-links{
+    text-align: center;
+}
+.social-links ion-icon{
+height: 30px;
+width: 30px;
+font-size: 20px;
+line-height: 40px;
+border: 1px solid white;
+margin: 40px 5px 0;
+color: rgb(78, 4, 4);
+cursor: pointer;
+transition: .5s;
+}
+.social-links ion-icon:hover{
+    background: darkblue;
+    color: white;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media screen and (max-width:770px){
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
+
+/*---services**/
+#service-offered{
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgb(163, 255, 255);
+    margin-bottom: 5px;
+}
+.column {
+    float: left;
+    width: 31%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 2px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 99%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
+    background-color:rgb(208, 235, 245);
+   
+    
+  }
+
+  .ribbon{
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: auto;
+    color: orange;
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgb(208, 235, 245);
+    background-size: cover;
+   
+  }
+
+  .ribbon::after{
+    display: block;
+    height: 2px;
+    background-color: rgb(206, 241, 7);
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .own{
+    font-size: x-large;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 2px;
+    background-color: beige;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px;
+    color: blue;
+  }
+ 
+  span{
+    font-weight: 1000px;
+    color: orangered;
+    font-size: xx-large;
+    text-align: right;
+    
+  }
